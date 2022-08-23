@@ -5,7 +5,7 @@ Project :https//www.naukri.com/
 
 Manager : Sudhanshu Sharma
 
-Team Lead:fw17_0735-Nandlal Saw
+Team Lead: fw17_0735-Nandlal Saw
 
 Member 1 :fw19_0461-Tanuj Pant
 
