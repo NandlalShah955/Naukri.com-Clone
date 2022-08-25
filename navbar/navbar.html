@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #t_navbar{
+            margin: auto;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: white;
+            height: 85px;
+        }
+        /* .t_elements{
+            position: absolute;
+        } */
+        .t_elements_container{
+            display: flex;
+            margin-left: -190px;
+            list-style: none;
+        }
+        .t_anchor_tag{
+            text-decoration: none;
+        }
+        .t_elements_li{
+            padding: 8px;
+            cursor: pointer;
+        }
+        .t_element_mega{
+            gap: 20px;
+            width: 100%;
+            display: none;
+            position: absolute;
+            left: 50px;
+            top: 75px; 
+            padding: 30px 0px;
+            visibility: hidden;
+            display: flex;
+            background-color: white;
+        }
+        .t_container{
+         border-right: 1px solid grey;
+        }
+        .t_elements_li:hover .t_element_mega{
+            position: absolute;
+            opacity: 1;
+            visibility: visible;
+        }
+        .t_elements_container{
+            display: inline-block;
+        }
+        .t_elements_container li{
+            display: inline-block;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .t_elements_container>li:nth-child(1):hover .t_element_mega{
+            display: flex;
+        }
+        ul.t_elements_container>li:nth-child(2):hover .t_element_mega{
+            display: flex;
+        }
+        ul.t_elements_container>li:nth-child(3):hover .t_element_mega{
+            display: flex;
+        }
+        ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
+            display: flex;
+        }
+        #t_t{
+            position:absolute;
+            left: 50px;
+        }
+        #t_h3_J{
+            color: gray;
+            font-weight: lighter;
+            /* transition:all .7s ease-in-out; */
+            /* -moz-transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out; */
+            box-sizing: border-box;
+        }
+        #t_h3_J:hover{
+            color: black;
+            font-weight: lighter;
+            border-bottom: 4px solid red;
+        }
+        #t_h3_C{
+            color: gray;
+            font-weight: lighter;
+            box-sizing: border-box;
+        }
+        #t_h3_C:hover{
+            color: black;
+            font-weight: lighter;
+            border-bottom: 4px solid red;
+        }
+        #t_h3_S{
+            color: gray;
+            font-weight: lighter;
+            box-sizing: border-box;
+        }
+        #t_h3_S:hover{
+            color: black;
+            font-weight: lighter;
+            border-bottom: 4px solid red;
+        }
+        #t_h3_R{
+            color: gray;
+            font-weight: lighter;
+            box-sizing: border-box;
+        }
+        #t_h3_R:hover{
+            color: black;
+            font-weight: lighter;
+            border-bottom: 5px solid orangered;
+        }
+        .t_foremployers{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 20px;
+        }
+        .t_logo{
+            margin-left: 20px;
+        }
+        .t_button{
+            margin-right: -190px;
+        }
+        .t_button_1{
+            margin-right: 18px;
+            padding: 12px;
+            width: 5vw;
+            font-weight: 600;
+            color: rgb(42, 184, 240);
+            border-radius:20px;
+            background-color: white;
+            border: 1px solid skyblue;
+            cursor: pointer;
+        }
+        .t_button_2{
+            padding: 12px;
+            width: 7vw;
+            font-weight: 600;
+            color: white;
+            border-radius:20px;
+            background-color: orangeRED;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+     /* A media query. It is used to make the website responsive */
+        @media all and (min-width: 768px) and (max-width: 1249px) {
+                #t_navbar{
+                overflow-x: hidden;
+                position: static;
+                width: 100vw;
+                } 
+                .t_elements{
+                  align-items: flex-start;
+                  width: fit-content;
+                }
+        }
+        @media all and (min-width: 320px) and (max-width: 767px) {
+                #t_navbar{
+                overflow-x: hidden;
+                padding: 0.8em 0;
+                align-items: flex-start;
+                width: fit-content;
+                }
+        }
+    </style>
+</head>
+<body>
+        <!-- The main container of the navbar. -->
+        <div id="t_navbar">
+            <div class="t_logo"><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error"></div>
+           <!-- A container for the elements of the navbar. -->
+            <div class="t_elements">
+                <ul class="t_elements_container">
+                    <li class="t_elements_li">
+                        <a href="#" class="t_anchor_tag"><h3 style="margin-right: 20px;" id="t_h3_J">Jobs</h3></a>
+                        <div class="t_element_mega" id="t_t">
+                            <div class="t_container">
+                              <a href="#"><h3>Popular categories</h3></a> 
+                              <a href="#"><h5>IT jobs</h5></a> 
+                              <a href="#"><h5>Sales jobs</h5></a> 
+                              <a href="#"><h5>Marketing jobs</h5></a> 
+                              <a href="#"><h5>Data Science jobs</h5></a> 
+                              <a href="#"><h5>HR jobs</h5></a> 
+                              <a href="#"><h5>Engineering jobs</h5></a> 
+                            </div>
+                            <div class="t_container">
+                              <a href="#"><h3>Jobs in demand</h3></a> 
+                              <a href="#"><h5>Fresher jobs</h5></a> 
+                              <a href="#"><h5>MNC jobs</h5></a> 
+                              <a href="#"><h5>Remote jobs</h5></a> 
+                              <a href="#"><h5>Work from home jobs</h5></a> 
+                              <a href="#"><h5>Walk-in jobs</h5></a> 
+                              <a href="#"><h5>Part-time jobs</h5></a> 
+                            </div>
+                            <div class="t_container">
+                              <a href="#"><h3>Explore more jobs</h3></a> 
+                              <a href="#"><h5>Jobs by category</h5></a> 
+                              <a href="#"><h5>Jobs by skill</h5></a> 
+                              <a href="#"><h5>Jobs by location</h5></a> 
+                              <a href="#"><h5>Jobs by designation</h5></a> 
+                              <a href="#"><h5>Create free job alert</h5></a> 
+                            </div>
+                            <div class="t_container">
+                              <a href="#"><h3>Jobs by location</h3></a> 
+                              <a href="#"><h5>Jobs in Delhi</h5></a> 
+                              <a href="#"><h5>Jobs in Mumbai</h5></a> 
+                              <a href="#"><h5>Jobs in Bangalore</h5></a> 
+                              <a href="#"><h5>Jobs in Hyderabad</h5></a> 
+                              <a href="#"><h5>Jobs in Chennai</h5></a> 
+                              <a href="#"><h5>Jobs in Pune</h5></a> 
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="t_elements_li">
+                        <a href="#" class="t_anchor_tag"><h3 style="margin-right: 20px;" id="t_h3_C">Companies</h3></a>
+                    </li>
+
+                    <li class="t_elements_li">
+                        <a href="#" class="t_anchor_tag"><h3 style="margin-right: 20px;" id="t_h3_S">Services</h3></a>
+                    </li>
+
+                    <li class="t_elements_li">
+                        <a href="#" class="t_anchor_tag"><h3 id="t_h3_R">Resources</h3></a>
+                    </li>
+                </ul>
+            </div>
+           <!-- A container for the two buttons. -->
+            <div class="t_button">
+                <button class="t_button_1">Login</button>
+                <button class="t_button_2">Register</button>
+            </div>
+           <!-- A div element that contains a h4 element. The h4 element has a class attribute with the
+           value "t_foremployers". -->
+            <div><h4 class="t_foremployers">For employers v</h4></div>
+        </div>
+</body>
+</html>
