@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>searcdata</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="javascript.css">
     
 </head>
 <body>
@@ -157,19 +157,19 @@
 
     <br><br>
 
-    <h3>Department</h3>
+    <h3 id="department">Department</h3>
     <p><span>▢ </span>Remote(5)</p>
     <p><span>▢ </span>Delhi / NCR(97)</p>
-    <p><span>▢ </span>Bangalore/Bengaluru(57)</p>
+    <p id="locationDta"><span   >▢ </span>Bangalore/Bengaluru(57)</p>
     
     
     <br><br>
 
-    <h3>Salary</h3>
+    <h3 id="salaey">Salary</h3>
     <p><span>▢</span> 0-3 Lakhs(56)</p>
     <p><span>▢</span> 3-6 Lakhs(122)</p>
     <p><span>▢</span> 6-10 Lakhs(107)</p>
-    <p><span>▢</span> 10-15 Lakhs(87)</p>
+    <p id="decreaseOrder"><span>▢</span> 10-15 Lakhs(87)</p>
     <p><span>▢</span> 15-25 Lakhs(84)</p>
 
     
@@ -229,21 +229,12 @@
    </div>
        
     <div id="middle">
-      <div>
-       <img src="./pic/1.jpeg" alt="" >
 
-      </div>
-      <div>
-        <img src="./pic/2.jpeg" alt="">
-       </div>
-       <div>
-        <img src="./pic/3.jpeg" alt="">
-       </div>
-       <div>
-        <img src="./pic/7.jpeg" alt="">
+       
+     
        </div>
 
-    </div>
+    
 
     <div id="right">
      <div>
@@ -259,7 +250,7 @@
     </div>
 
         
-  
+</div>
 
 
 </div>
@@ -400,8 +391,204 @@
 
 </body>
 </html>
-<script src="search.js">
+<script>
+let middle=document.querySelector("#middle")
+//salaey
+    
+ let arr=[
+    {titlle:"Full Stack Developer - Web Apps - React.js/Node.js/JavaScript",company:"Hiring for Leading Client",year:"3-5 years" ,discription:"Not closed",location:"Kolkata, Mumbai, Hyderabad/Secunderabad, Lucknow, Chennai" ,btn:"Regirter to apply"
+
+},
+
+{titlle:"JavaScript Developer - MSys Technologies - Immediate Joiner",company:"MSys Technologies3.9(53 Reviews)",year:"6-11 years" ,discription:"Not Disclosed",location:"Pune, Chennai, Bangalore/Bengaluru (WFH during Covid)" ,btn:"Regirter to apply"
+
+},
+{titlle:"React.js Developer - JavaScript",company:"Hiring for Leading Client",year:"3-5 years" ,discription:"Not closed",location:"Kolkata, Mumbai, Hyderabad/Secunderabad, Lucknow, Chennai" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"FMEAN / JavaScript Full Stack developers",company:"SuccessR Hrtech Pvt Ltd4.2(3 Reviews)",year:"3-8 years" ,discription:"Not closed",location:"Kolkata, Mumbai, Hyderabad/Secunderabad, Lucknow, Chennai" ,btn:"Regirter to apply"
+
+},
+
+{titlle:"Full Stack Developer - ES6/Vue.js/JavaScript",company:"Intandemly4.0(4 Reviews)",year:"3-9 years" ,discription:"Not closed",location:"Hyderabad/Secunderabad" ,btn:"Regirter to apply"
+
+},
+
+{titlle:"Sr. Full Stack Developer ( Java, JavaScript, Angular 8, Postgres)",company:"RWS Group4.1(7 Reviews)",year:"3-6 years" ,discription:"Not closed",location:"Indore, Pune, Mumbai (All Areas)" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Web Developer - React.js/Javascript",company:"Vmultiply Solutions2.3(3 Reviews)",year:"4-6 years" ,discription:"Not closed",location:"Bangalore/Bengaluru" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"UI Developer - HTML5/CSS3/Javascript",company:"Odiware Technologies5.0(2 Reviews)",year:"4-9 years" ,discription:"Not closed",location:"Delhi / NCR" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Senior UI Developer - TypeScript/Javascript",company:"Intandemly4.0(4 Reviews)",year:"5-9 years" ,discription:"Not closed",location:"Hyderabad/Secunderabad" ,btn:"Regirter to apply"
+
+},
+
+{titlle:" JavaScript Developer - React.js/HTML5",company:"Megma Services",year:"2-6 years" ,discription:"Not closed",location:" Bangalore/Bengaluru" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Sr. Full Stack Developer ( Java, JavaScript, Angular 8, Postgres)",company:"RWS Group4.1(7 Reviews)",year:"3-6 years" ,discription:"Not closed",location:"Indore, Pune, Mumbai (All Areas)" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Front end Developer - HTML/CSS/JavaScript",company:"Pepper Cloud5.0(2 Reviews)",year:"2-5 years" ,discription:"Not closed",location:"Kolkata, Mumbai, Hyderabad/Secunderabad, Lucknow, Chennai," ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Senior React.js Developer - Javascript/JSON",company:"Megma Services",year:"5-10 years" ,discription:"Not closed",location:"Bangalore/Bengaluru" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Node.js Developer - Express.js / JavaScript",company:"Talent-Max Consultant",year:"2-5 years" ,discription:"Not closed",location:"Chennai" ,btn:"Regirter to apply"
+
+},
+
+
+{titlle:"Full Stack developer (Node.JS/JavaScript/AWS)",company:"Cimpress4.5(125 Reviews)",year:"3-8 years" ,discription:"Not closed",location:"Remote (Hiring office located in Bangalore/Bengaluru)" ,btn:"Regirter to apply"
+
+},
+
+
+
+
+
+
+
+]
+
+     let sorthandle=document.querySelector("#department")
+     sorthandle.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.titlle>b.titlle)  return -1
+            if(a.titlle<b.titlle) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+     //salery sorted   decreaseOrder
+     let salryHandle=document.querySelector("#salaey")
+     salryHandle.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return 1
+            if(a.year<b.year) return -1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+
+
+     let DecreaseOrder=document.querySelector("#decreaseOrder")
+     DecreaseOrder.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return -1
+            if(a.year<b.year) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+
+
+     //location search
+     
+     let LocationSearch=document.querySelector("#locationDta")
+     LocationSearch.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return -1
+            if(a.year<b.year) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+       })
+         
+      
+
+
+
+        
+     
+
+ 
+     appenData(arr)
+
+
+
   
+  function appenData(arr){
+    middle.innerHTML=""
+    arr.forEach(function(elem){
+    let div=document.createElement("div");
+
+    let heding=document.createElement("h3")
+    heding.innerText=elem.titlle
+
+    let p1=document.createElement("p")
+    p1.innerText=elem.company
+
+    let p2=document.createElement("p")
+    p2.innerText=elem.year
+
+    let p3=document.createElement("p")
+    p3.innerText=elem.discription
+
+    let p4=document.createElement("p")
+    p4.innerText=elem.location
+
+    let button=document.createElement("button")
+    button.innerText=elem.btn
+    button.addEventListener("click",function(){
+        window.location.href="Details.html"
+    })
+
+
+    div.append(heding,p1,p2,p3,p4,button)
+    middle.append(div)
+
+
+
+
+
+
+
+  })
+  }
+ 
 </script>
 
 
