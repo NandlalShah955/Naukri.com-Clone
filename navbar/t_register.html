@@ -35,8 +35,10 @@
          width: 25%;
          height: 55vh;
          margin-top: 10px;
-         /* position: fixed; */
-         float: left;
+         position: sticky;
+         left: 0;
+         top: 60px;
+         /* float: left; */
         }
         .r_right{
          /* border: 1px solid teal; */
@@ -111,11 +113,14 @@
         .t_reg_form input{
             width: 50vw;
             height: 7vh;
+            border: 1px solid #d3e1ea;
+            outline: none;
+            /* border-color: gray; */
         }
         .t_reg_form ::placeholder{
             font-size: large;
             padding: 5px;
-            color: gray;
+            color: #7c858b;
         }
         .t_resume-btn{
             margin: 10px 0 10px 0;
@@ -157,7 +162,7 @@
     <!-- THIS IS THE DIV BELONGS TO NAVBAR OF THE REGISTER PAGE -->
    <div id="reg_navbar">
     <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error">
-    <p style="color: grey;">Already Registered?<a href="#" style="text-decoration: none; color: blue;"> Login</a> here</p>
+    <p style="color: grey;">Already Registered?<a href="./t_login.html" style="text-decoration: none; color: blue;"> Login</a> here</p>
    </div>
 
    <!-- THIS THE CONTAINER WHICH CONTAINS THE REMAINING ELEMENTS OF THE REGISTER PAGE -->
@@ -215,11 +220,11 @@
         <div class="r_right_bottom">
             <div>
                 <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQs</a>
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Report a Problem</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Contact Us</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">FAQs</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Terms and Conditions</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Report a Problem</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Privacy Policy</a>
             </div>
          <small style="color: gray;margin-left: 285px;">All rights reserved © 2022 Info Edge India Ltd.</small>
         </div>
@@ -228,6 +233,4 @@
  
 </body>
 </html>
-<script>
-
-</script>
+<script src="./t_register.js" type="module"></script>
