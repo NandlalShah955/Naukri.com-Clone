@@ -1,5 +1,6 @@
 #mainhi {
-  margin-top: 100px;
+
+  
   text-align: center;
   font-family: "Roboto Slab", serif;
 }
@@ -77,7 +78,7 @@
   width: 100px;
   margin-left: 20px;
 }
-.qsbSubmit {
+#qsbSubmit {
   padding: 11px 28px;
   font-weight: 600;
   font-size: 19px;
@@ -873,4 +874,19 @@ border:1px solid  #EAF1F5;
 }
 .rokaucareerwala:hover{
   box-shadow: 0px 8px 20px rgb(0 73 203 / 12%);
+}
+#navibarr{
+  margin: auto;
+width: 1200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 10vh;
+  
 }

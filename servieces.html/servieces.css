@@ -1,4 +1,6 @@
-
+*{
+   font-family: "Roboto Slab", serif;";
+}
 #start{
    font-size: 10px;
    text-align: center;
@@ -220,5 +222,35 @@ color: white;
     color: grey;
 }
 .long{
-    width: 60%;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.87);
 }
+.bhasan{
+    width: 800px;
+    margin: auto;
+}
+.disc{
+  margin-left:282px ;
+}
+.sliderlastam {
+    height: 40%;
+  margin: auto;
+    width: 50%;
+    margin-top: 30px;
+    display: flex;
+  }
+  .rokaulast {
+    height: 90%;
+    margin: 4px;
+  }
+  .rokaulast > img {
+    width: 100%;
+    height: 100%;
+  }
+  .sliderlastam > .slick-prev.slick-arrow::before {
+    content: none;
+  }
+  .sliderlastam > .slick-next.slick-arrow::before {
+    content: none;
+  }

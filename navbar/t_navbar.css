@@ -4,6 +4,7 @@ body{
 }
 #t_navbar{
     margin: auto;
+    /* margin-left: 100px; */
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +18,8 @@ body{
 }
 .t_elements_container{
     display: flex;
-    margin-left: -190px;
+     
+   margin-left: -190px;
     list-style: none;
 }
 .t_anchor_tag{
@@ -96,8 +98,12 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     left: 400px;
 }
 #t_h3_J{
-    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+   color: #8C9CBB;
+    font-weight: 500;
     font-weight: lighter;
+    
     /* transition:all .7s ease-in-out; */
     /* -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -112,7 +118,10 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     border-bottom: 4px solid #FF7555;
 }
 #t_h3_C{
-    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+   color: #8C9CBB;
+    font-weight: 500;
     font-weight: lighter;
     box-sizing: border-box;
 }
@@ -123,7 +132,10 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     border-bottom: 4px solid #FF7555;
 }
 #t_h3_S{
-    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+   color: #8C9CBB;
+    font-weight: 500;
     font-weight: lighter;
     box-sizing: border-box;
 }
@@ -134,7 +146,10 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     border-bottom: 4px solid #FF7555;
 }
 #t_h3_R{
-    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+   color: #8C9CBB;
+    font-weight: 500;
     font-weight: lighter;
     box-sizing: border-box;
 }
@@ -145,10 +160,11 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     border-bottom: 5px solid #FF7555;
 }
 .t_foremployers{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter",sans-serif;
     margin-right: 20px;
-    color: rgb(44, 42, 42);
+  color: #445578;;
     box-sizing: border-box;
+    font-size: 15px;
 }
 .t_foremployers:hover{
     margin-bottom: 15px;
@@ -167,9 +183,12 @@ ul.t_elements_container>li:nth-child(4):hover .t_element_mega{
     font-weight: 600;
     color: rgb(42, 184, 240);
     border-radius:20px;
-    background-color: white;
-    border: 1px solid skyblue;
+  
     cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #88ADFF;
+    border-radius: 100px;
+  
 }
 .t_button_2{
     padding: 12px;

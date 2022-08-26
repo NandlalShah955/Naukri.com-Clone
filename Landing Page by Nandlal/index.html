@@ -35,8 +35,15 @@
     referrerpolicy="no-referrer"
   />
     <link rel="stylesheet" href="./homep.css" />
+    <link rel="stylesheet" href="/navbar/t_navbar.css">
   </head>
   <body>
+<!-- <a href="/servieces.html/servieces.html"></a> -->
+<div id="navibarr">
+    <!-- Navbar to be appended here  -->
+</div>
+
+
     <div id="mainhi">
       <h1>Find your dream job now</h1>
       <p class="jaab">5 lakh+jobs for you to explore</p>
@@ -55,6 +62,7 @@
           placeholder="Enter skills / designations / companies"
           tabindex="0"
           value=""
+          id="skills"
         />
       </div>
       <div class="pipehi"></div>
@@ -64,21 +72,21 @@
             Select Experience
           </option>
           <option value="">Fresher(less than 1 year)</option>
-          <option value="">1 year</option>
-          <option value="">2 year</option>
-          <option value="">3 year</option>
-          <option value="">4 year</option>
-          <option value="">5 year</option>
-          <option value="">6 year</option>
-          <option value="">7 year</option>
-          <option value="">8 year</option>
-          <option value="">9 year</option>
-          <option value="">10 year</option>
-          <option value="">11 year</option>
-          <option value="">12 year</option>
-          <option value="">13 year</option>
-          <option value="">14 year</option>
-          <option value="">15 year</option>
+          <option value="1 year">1 year</option>
+          <option value="2 year">2 year</option>
+          <option value="3 year">3 year</option>
+          <option value="4 year">4 year</option>
+          <option value="5 year">5 year</option>
+          <option value="6 year">6 year</option>
+          <option value="7 year">7 year</option>
+          <option value="8 year">8 year</option>
+          <option value="9 year">9 year</option>
+          <option value="10 year">10 year</option>
+          <option value="11 year">11 year</option>
+          <option value="12 year">12 year</option>
+          <option value="13 year">13 year</option>
+          <option value="14 year">14 year</option>
+          <option value="15 year">15 year</option>
         </select>
       </div>
       <div class="pipehi"></div>
@@ -89,13 +97,14 @@
           placeholder="Enter location"
           tabindex="0"
           value=""
+          id="locat"
         />
       </div>
       <div class="fourthh">
-        <button class="qsbSubmit">Search</button>
+        <button id="qsbSubmit">Search</button>
       </div>
     </div>
-
+<a href="../java.html"></a>
     <div id="conta">
         <img src="webcap.jpeg" alt="">
     </div>
@@ -1267,6 +1276,7 @@ management company</p>
   referrerpolicy="no-referrer"
 ></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./index.js" type="module"></script>
 <script type="text/javascript">
 
 $('.slider').slick({
