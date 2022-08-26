@@ -1,0 +1,224 @@
+
+#start{
+   font-size: 10px;
+   text-align: center;
+   margin: auto;
+   background-color: rgb(235, 235, 46);
+  height: 50px;
+}
+#second{
+    text-align: center;
+   background-color:rgb(81, 81, 234);
+   color: white;
+   margin-top: -25px;
+   height: 400px;
+}
+#middle{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: -300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#middle>div{
+   
+    background-color: white;
+}
+.button{
+    display: grid;
+   justify-content: space-evenly;
+   margin-left: auto;
+   background-color: rgb(241, 165, 135);
+   color: white;
+   font-weight: bold;
+}
+.img{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.head{
+    font-size: 20px;
+    color:grey;
+}
+.h3{
+    color: grey;
+}
+.head2{
+    font-size: 15px;
+    margin-top: -10px;
+}
+.h4{
+    font-size: 14px;
+    color: blue;
+    display: grid;
+    justify-content: space-around;
+}
+#v1{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   padding: 20px;
+   gap: 40px;
+ 
+}
+#v2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    justify-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.v4{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 300px;
+    width: 65%
+}
+.v6{
+    margin: auto;
+    display: grid;
+    background-color: grey;
+}
+.v7{
+   width: 55%;
+}
+#small{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: grey;
+}
+.h5{
+    color: blue;
+    background-color: white;
+    margin-left: 150px;
+    justify-content: space-between;
+    display: grid;
+}
+#cont{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    gap: 45px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.s1{
+    width: 65%;
+}
+.head1{
+    font-size: 20px;
+}
+.s2{
+    font-size: 19px;
+
+}
+.but{
+    background-color: white;
+    color: blue;
+}
+body{
+    background-color: white;
+}
+#s8{
+    background-color: rgb(80, 80, 239);
+}
+#v7{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#v8{
+    background-color: white;
+}
+#v{
+    width: 70%;
+    height: 30px;
+}
+#v5{
+    width: 70%;
+    height: 30px;
+
+}
+#v3{
+    width: 70%;
+    height: 30px;
+    
+}
+#v4{
+    width: 70%;
+    height: 45px;
+    
+}
+#j1{
+    background-color: rgb(80, 80, 239);
+    color: white;
+    width: 65%;
+    height: 50px;
+    margin-left: 100%;
+    font-size: 30px;
+    border-radius: 20px;
+    padding-left: 30px;
+   
+}
+.h1{
+    font-size: 20px;
+    color: blue;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 16px;
+}
+#g1{
+    display: flex;
+    gap: 20px;
+    color: blue;
+}
+#savi{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.z{
+    color:dodgerblue;
+    width: 40%;
+}
+.c{
+    font-size: 25px;
+}
+#n{
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+#n>div{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+#m{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#k{
+    margin-left: -200px;
+}
+.d{
+    width: 45%;
+}
+#last{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: rgb(49, 48, 48);
+color: white;    
+}
+#last>div{
+    color: grey;
+}
+.long{
+    width: 60%;
+}
