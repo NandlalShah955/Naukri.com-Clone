@@ -474,20 +474,85 @@ a {
 
   font-family: "Inter", sans-serif;
 }
-.slidergridwala {
-  height: 380px;
-  width: 990px;
-  border: 1px solid black;
+.slidergridwala{
+  height: 450px;
+  width: 1100px;
+ 
   margin: auto;
-  margin-top: 10px;
+  margin-top: -5px;
   display: flex;
+  font-family: "Inter", sans-serif;
+  
   
 }
 .Rokaugridwala{
-height: 100%;
 
-  border: 1px solid red;
+  height: 100%;
+ 
+border: none;
+
+
 }
+.twoboxes{
+text-align: center;
+ border-top-left-radius:16px ;
+ border-bottom-right-radius:16px ;
+ border-top-right-radius: 6px;
+ border-bottom-left-radius: 6px;
+ margin-top: 10px;
+  height: 40%;
+  width: 100%;
+  border: 1px solid #EAF1F5;
+
+  
+}
+.twoboxes:hover{
+  box-shadow: 0px 8px 20px rgb(0 73 203 / 12%);
+}
+.chotaimage{
+  height: 40px;
+  width: 40px;
+border-radius: 10px;
+  margin: auto;
+border:1px solid  #EAF1F5;
+  margin-top: 25px;
+
+}
+.chotaimage>img{
+  width: 100%;
+  height: 100%;
+}
+.chotaimage+h4{
+  font-weight: 500;
+    
+    color: #1B2437;
+    position: relative;
+    height: 23px;
+    margin-top:4px;
+}
+.chotaimage+h4+p{
+  font-size: 12px;
+  line-height: 14px;
+  color: #8292B4;
+  margin-top: -20px;
+}
+.chotapara{
+  border: 1px solid #ECF5FF;
+    padding: 1px 6px;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-right: 4px;
+    color: #8292B4;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 #appendhaiimageprep {
   margin: auto;
   height: 380px;
