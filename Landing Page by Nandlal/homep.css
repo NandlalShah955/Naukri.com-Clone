@@ -329,6 +329,17 @@ a {
   background-color: white;
   line-height: 24px;
 }
+.seeyagridka{
+  margin-left: 44%;
+  margin-top: -20px;
+  border: 1px solid #88adff;
+  border-radius: 100px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: white;
+  line-height: 24px;
+}
 #Discovryy {
   height: 405px;
   /* border: 1px solid black; */
@@ -512,7 +523,7 @@ text-align: center;
 .chotaimage{
   height: 40px;
   width: 40px;
-border-radius: 10px;
+border-radius: 3px;
   margin: auto;
 border:1px solid  #EAF1F5;
   margin-top: 25px;
@@ -546,10 +557,7 @@ border:1px solid  #EAF1F5;
     display: inline-block;
     font-size: 11px;
     line-height: 14px;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+   
 }
 
 
