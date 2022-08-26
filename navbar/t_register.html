@@ -23,9 +23,9 @@
         margin: 10px 20px;         
         }
         .r_container{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 98%;
-            /* height: 80vh; */
+            height: 200vh;
             margin: auto;
             display: flex;
             margin-top: 30px
@@ -35,25 +35,27 @@
          width: 25%;
          height: 55vh;
          margin-top: 10px;
-         position: sticky;
+         /* position: fixed; */
          float: left;
         }
         .r_right{
-         border: 1px solid teal;
+         /* border: 1px solid teal; */
          width: 75%;
+         float: right;
         }
         .r_right_top{
-            border: 1px solid rgb(195, 237, 45);
+            border: 1px solid transparent;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             width: 95%;
             margin: auto;
-            /* height: 65vh; */
+            height: 155vh;
             margin-bottom: 15px;
         }
         .r_right_bottom{
-            border: 1px solid rgb(109, 15, 250);
+            /* border: 1px solid rgb(109, 15, 250); */
             width: 90%;
-            margin: auto;
-            height: 10vh;
+            margin-top: 40px;
+            height: 16vh;
         }
         .r_left_div img:nth-child(1){
          height: 3vh;
@@ -94,11 +96,62 @@
         }
         .r_right_top h1{
         font-family: sans-serif;
+        margin: 50px 0 30px 50px;
+        font-size: 32px;
+        line-height: 28px;
         }
-        .r_right_top h5{
-        font-family: sans-serif;
+        .t_reg_form{
+            margin-left: 50px;
         }
-    </style>
+        .t_reg_form label{
+            font-weight: 600;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .t_reg_form input{
+            width: 50vw;
+            height: 7vh;
+        }
+        .t_reg_form ::placeholder{
+            font-size: large;
+            padding: 5px;
+            color: gray;
+        }
+        .t_resume-btn{
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 10vw;
+            font-weight: 600;
+            color: white;
+            border-radius:20px;
+            background-color: #FF7555;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .t_resume-btn1{
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 12vw;
+            font-size: large;
+            font-weight: 700;
+            color: white;
+            border-radius:20px;
+            background-color: #457EFF;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .r_right_bottom div{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        }
+        .r_right_bottom div a{
+        color: #457EFF;
+        font-size: small;
+        text-decoration: none;
+        }
+
+</style>
 </head>
 <body>
     <!-- THIS IS THE DIV BELONGS TO NAVBAR OF THE REGISTER PAGE -->
@@ -133,7 +186,7 @@
         <div class="r_right_top">
             <h1>Find a job & grow your career</h1>
             <br>
-            <form>
+            <form class="t_reg_form">
                 <label for="Name">Full Name</label><br>
                 <input type="text" placeholder="What is your name?" id="t_fullname"><br><br>
                 <label for="Email">Email Id</label><br>
@@ -146,19 +199,30 @@
                 <input type="number" value="+91" placeholder="Mobile Number"><br>
                 <small>Recruiters will call you on this number</small><br><br>
                 <label for="work status">Work Status</label><br>
-                <br><br>
+                <h3 style="color:#457EFF"><input type="checkbox" style="width:2vw;height:3vh;"></input> I'm Experienced &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" style="width:2vw;height:3vh;"></input> I'm a Fresher</h3>
+                <br>
                 <label for="resume">Resume</label><br>
-                <button>Upload Resume</button><br>
+                <button class="t_resume-btn">Upload Resume</button><br>
                 <small>Recruiters give first preference to candidates who have a resume</small>
                 <br><br>
-                <p>Send me important updates on Whatsapp</p>
-                <br><br>
-                <small>By clicking Register, you agree to the <a href="" target="_blank" style="text-decoration: none;color: blue;">Terms and Conditions</a> & <a href="" target="_blank" style="text-decoration: none;color: blue;">Privacy Policy</a> of Naukri.com</small>
-                <br><br>
-                <button>Register Now</button>
+                <p><input type="checkbox" style="width:2vw;height:3vh;"></input>Send me important updates on <img src="https://static.naukimg.com/s/7/104/assets/images/whatsappicon.0011d8c1.png"alt="Error" style="height: 4vh;">Whatsapp</p>
+                <br>
+                <small>By clicking Register, you agree to the <a href="https://www.naukri.com/termsconditions#g1" target="_blank" style="text-decoration: none;color: blue;">Terms and Conditions</a> & <a href="https://www.naukri.com/privacypolicy" target="_blank" style="text-decoration: none;color: blue;">Privacy Policy</a> of Naukri.com</small>
+                <br>
+                <button class="t_resume-btn1" >Register Now</button>
             </form>
         </div>
-        <div class="r_right_bottom"></div>
+        <div class="r_right_bottom">
+            <div>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Report a Problem</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+         <small style="color: gray;margin-left: 285px;">All rights reserved © 2022 Info Edge India Ltd.</small>
+        </div>
      </div>
    </div>
  
