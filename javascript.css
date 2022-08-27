@@ -64,7 +64,7 @@ a:hover #submenu1{
     text-decoration: none;
     z-index: 1;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: lightblue;
+    background-color: white;
 }
 
 
@@ -81,15 +81,16 @@ a:hover #submenu1{
    
     height: auto;
     margin-top: 90px;
-    border: 1px solid red;
+   
     margin-left: 20px;
     font-size: 20px;
     gap: 10px;
+  
      
    }
    #lest{
     width: 20%;
-    border: 1px solid red;
+  
    }
 
    #logo{
@@ -102,7 +103,7 @@ a:hover #submenu1{
    /*middle div */
 
    #middle{
-    border: 1px solid red;
+   
     width:60%;
     height:auto;
     margin-left: 10px;
@@ -112,10 +113,13 @@ a:hover #submenu1{
 
    }
    #middle>div{
-    border: 1px solid red;
+   
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-left: 10px;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
 
 
    }
@@ -133,7 +137,7 @@ a:hover #submenu1{
  
 #right{
    
-    border: 1px solid red;
+   
     width: 20%;
     
    }

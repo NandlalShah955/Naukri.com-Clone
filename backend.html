@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>searcdata</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BACKEND DEVELOPER</title>
+    <link rel="stylesheet" href="backend.css">
     
 </head>
 <body>
@@ -157,19 +157,19 @@
 
     <br><br>
 
-    <h3>Department</h3>
+    <h3 id="department">Department</h3>
     <p><span>▢ </span>Remote(5)</p>
     <p><span>▢ </span>Delhi / NCR(97)</p>
-    <p><span>▢ </span>Bangalore/Bengaluru(57)</p>
+    <p id="locationDta"><span   >▢ </span>Bangalore/Bengaluru(57)</p>
     
     
     <br><br>
 
-    <h3>Salary</h3>
-    <p><span>▢</span> 0-3 Lakhs(56)</p>
+    <h3 >Salary</h3>
+    <p id="salaey"><span>▢</span> 0-3 Lakhs(56)</p>
     <p><span>▢</span> 3-6 Lakhs(122)</p>
     <p><span>▢</span> 6-10 Lakhs(107)</p>
-    <p><span>▢</span> 10-15 Lakhs(87)</p>
+    <p id="decreaseOrder"><span>▢</span> 10-15 Lakhs(87)</p>
     <p><span>▢</span> 15-25 Lakhs(84)</p>
 
     
@@ -229,21 +229,12 @@
    </div>
        
     <div id="middle">
-      <div>
-       <img src="./pic/1.jpeg" alt="" >
 
-      </div>
-      <div>
-        <img src="./pic/2.jpeg" alt="">
-       </div>
-       <div>
-        <img src="./pic/3.jpeg" alt="">
-       </div>
-       <div>
-        <img src="./pic/7.jpeg" alt="">
+       
+     
        </div>
 
-    </div>
+    
 
     <div id="right">
      <div>
@@ -259,7 +250,7 @@
     </div>
 
         
-  
+</div>
 
 
 </div>
@@ -400,8 +391,204 @@
 
 </body>
 </html>
-<script src="search.js">
+<script>
+let middle=document.querySelector("#middle")
+//salaey
+    
+ let arr=[
+    {titlle:"Backend Developer",company:"Skroman Switches Pvt. Ltd.3.9(5 Reviews)",year:"3-5 years" ,discription:"₹ 3,00,000 - 7,00,000 P.A.",location:"Pune( Baner )" ,btn:"Register to apply"
+
+},
+
+{titlle:"Backend Developer",company:"Fabrik",year:"0-4 years" ,discription:"Not Disclosed",location:"Bangalore/Bengaluru" ,btn:"Register to apply"
+
+},
+{titlle:"Hiring For Backend Developer!!",company:"Glitterbug Technologies3.6(122 Reviews)",year:"3-8 years" ,discription:"₹ 7,00,000 - 14,00,000 P.A.",location:"Bangalore/Bengaluru" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Middle/ Senior Backend Developer",company:"Middle/ Senior Backend Developer",year:"4-9 years" ,discription:"$ 25,000 - 35,000 P.A. (Including Variable: 100%)",location:"Remote (Hiring office located in Bangalore/Bengaluru)" ,btn:"Register to apply"
+
+},
+
+{titlle:"Senior Backend Developer",company:"KWALEE INDIA PRIVATE LIMITED2.3(4 Reviews)",year:"5-9 years" ,discription:"Not closed",location:"Bangalore/Bengaluru" ,btn:"Register to apply"
+
+},
+
+{titlle:"Sr Backend Developer",company:"i3systems3.7(17 Reviews)",year:"3-7 years" ,discription:"Not closed",location:"Bangalore/Bengaluru, Mumbai (All Areas)" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Backend Developer",company:"Titan Consultancy",year:"3-5 years" ,discription:"Not closed",location:"Thane" ,btn:"Register to apply"
+
+},
+
+
+{titlle:".NET/Backend Developer (Permanent Work from Home)",company:"Gridlogics Technologies3.7(12 Reviews)",year:"0-5 years" ,discription:"₹ 6,00,000 - 12,00,000 P.A.",location:"Remote (Hiring office located in Pune)" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Backend Developer",company:"CANUM INFOTECH PRIVATE LIMITED",year:"5-10 years" ,discription:"Not closed",location:"Chennai" ,btn:"Register to apply"
+
+},
+
+{titlle:" Urgent Opening For Backend Developer- Nalanda Learning Systems Pvt Ltd",company:"Nalanda Learning Systems3.6(78 Reviews)",year:"2-7 years" ,discription:"Not closed",location:" Delhi / NCR" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"URGENT HIRING || BACKEND DEVELOPER || JUDGE INDIA",company:"From 9 to 14 year(s) of experience",year:"9-14 years" ,discription:" ₹ 15,00,000 - 25,00,000 P.A.",location:"Hyderabad/Secunderabad, Bangalore/Bengaluru, Delhi / NCR" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Front end Developer - HTML/CSS/JavaScript",company:"Pepper Cloud5.0(2 Reviews)",year:"2-5 years" ,discription:"Not closed",location:"Kolkata, Mumbai, Hyderabad/Secunderabad, Lucknow, Chennai," ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Backend Go Developer",company:"Megma Services",year:"0-3 years" ,discription:"Not closed",location:"Gurgaon/Gurugram" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"Junior Backend Developer",company:"KWALEE INDIA PRIVATE LIMITED",year:"1-3 years" ,discription:"Not closed",location:"Bangalore/Bengaluruennai" ,btn:"Register to apply"
+
+},
+
+
+{titlle:"BACKEND DEVELOPER",company:"Cimpress4.5(125 Reviews)",year:"5-8 years" ,discription:"Not closed",location:"Bangalore/Bengaluru (WFH during Covid)" ,btn:"Register to apply"
+
+},
+
+
+
+
+
+
+
+]
+
+     let sorthandle=document.querySelector("#department")
+     sorthandle.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.titlle>b.titlle)  return -1
+            if(a.titlle<b.titlle) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+     //salery sorted   decreaseOrder
+     let salryHandle=document.querySelector("#salaey")
+     salryHandle.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return 1
+            if(a.year<b.year) return -1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+
+
+     let DecreaseOrder=document.querySelector("#decreaseOrder")
+     DecreaseOrder.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return -1
+            if(a.year<b.year) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+
+        
+     })
+
+
+
+     //location search
+     
+     let LocationSearch=document.querySelector("#locationDta")
+     LocationSearch.addEventListener("click",function(){
+        arr= arr.sort(function(a,b){
+            if(a.year>b.year)  return -1
+            if(a.year<b.year) return 1
+               return 0
+         })
+         appenData(arr)
+        console.log(arr) 
+
+
+       })
+         
+      
+
+
+
+        
+     
+
+ 
+     appenData(arr)
+
+
+
   
+  function appenData(arr){
+    middle.innerHTML=""
+    arr.forEach(function(elem){
+    let div=document.createElement("div");
+
+    let heding=document.createElement("h3")
+    heding.innerText=elem.titlle
+
+    let p1=document.createElement("p")
+    p1.innerText=elem.company
+
+    let p2=document.createElement("p")
+    p2.innerText=elem.year
+
+    let p3=document.createElement("p")
+    p3.innerText=elem.discription
+
+    let p4=document.createElement("p")
+    p4.innerText=elem.location
+
+    let button=document.createElement("button")
+    button.innerText=elem.btn
+    button.addEventListener("click",function(){
+        window.location.href="backDetails.html"
+    })
+
+
+    div.append(heding,p1,p2,p3,p4,button)
+    middle.append(div)
+
+
+
+
+
+
+
+  })
+  }
+ 
 </script>
 
 
