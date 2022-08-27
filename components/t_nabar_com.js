@@ -1,5 +1,5 @@
 let navbar_t = () => { 
-    return `  <div class="t_logo"><a href="#"><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error"></a></div>
+    return `  <div class="t_logo"><a href="#"><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error" id="mainpagepaileja"></a></div>
     <div class="t_elements">
         <ul class="t_elements_container">
             <li class="t_elements_li">
