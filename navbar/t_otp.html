@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+    <style>
+      #t_otp-container {
+        width: 45%;
+        height: 60vh;
+        font-size:15px;
+        margin-left: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 30px;
+        border-radius: 35px;
+      }
+      #t_otpForm > input {
+        width: 40vw;
+        font-size: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+        margin-left: 25px;
+      }
+      #otp::placeholder{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="t_otp-container">
+      <h2 style="margin-left: 00px; padding-top: 60px;font-family:Arial, Helvetica, sans-serif;text-align: center;">Please enter the OTP you have received on your registered number</h2>
+      <form action="" id="t_otpForm">
+        <p style="text-align: center;font-size: larger;">OTP</p>
+        <input type="password" id="otp" placeholder=" 6 digits" />
+        <p></p>
+        <input type="submit" value="Submit" style="background-color: rgb(255, 231, 11); cursor: pointer;" />
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("#t_otpForm").addEventListener("submit", paymentDetails);
+
+  function paymentDetails() {
+    event.preventDefault();
+    let form = document.querySelector("#t_otpForm");
+    let otp = form.otp.value;
+    console.log(otp);
+    if (otp == "") {
+      alert("enter your 6 digit OTP");
+    } else if (otp.length == 6) {
+      alert("Login Successful");
+      window.location.href = "/Shaikh.JobSearch/job.html";
+    } else {
+      alert("Invailed OTP Number");
+    }
+    form.reset();
+  }
+</script>
