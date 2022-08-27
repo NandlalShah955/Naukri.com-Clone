@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1;
    
 }
 
@@ -63,7 +64,7 @@ a:hover #submenu1{
     text-decoration: none;
     z-index: 1;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: rgb(203, 214, 218);
+    background-color:white;
 }
 
 
@@ -80,15 +81,16 @@ a:hover #submenu1{
    
     height: auto;
     margin-top: 90px;
-    border: 1px solid red;
+   
     margin-left: 20px;
     font-size: 20px;
     gap: 10px;
+  
      
    }
    #lest{
     width: 20%;
-    border: 1px solid red;
+  
    }
 
    #logo{
@@ -101,22 +103,44 @@ a:hover #submenu1{
    /*middle div */
 
    #middle{
-    border: 1px solid red;
+   
     width:60%;
-    height:auto;
+     height: auto;
     margin-left: 10px;
 
  
     
 
    }
-   #middle>div>img{
-       width: 100%;
+   #middle>div{
+    padding-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+ 
+    height: auto;
+    
+
+
    }
+   #middle>div>button{
+    position: relative;
+    top: -10px;
+    left: 70%;
+    background-color: blue;
+    font-size: 20px;color: white;
+    border-radius: 10px;
+    padding: 10px ;
+    border: none;
+   }
+
+ 
 #right{
    
-    border: 1px solid red;
+   
     width: 20%;
+    
    }
 
    #right>div{
@@ -157,7 +181,7 @@ a:hover #submenu1{
   
     color: white;
 
-
+   gap:120px ;
     overflow-y:hidden;
     
     justify-content: center;
@@ -179,3 +203,36 @@ a:hover #submenu1{
     height: 50px;
   
    }
+
+   #department:hover{
+    cursor: pointer;
+    
+   }
+    
+
+   
+
+   #locationDta:hover{
+    cursor: pointer;
+    
+   }
+
+
+   #salaey:hover{
+    cursor: pointer;
+    
+   }
+
+
+   
+   #decreaseOrder:hover{
+    cursor: pointer;
+    
+   }
+
+   
+
+   
+
+   
+   
