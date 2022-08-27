@@ -130,7 +130,7 @@ let navbar_t = () => {
         </ul>
     </div>
     <div class="t_button">
-        <button class="t_button_1">Login</button>
+        <a href="../navbar/t_register.html" target="_blank"><button class="t_button_1">Login</button></a>
         <a href="../navbar/t_register.html" target="_blank"><button class="t_button_2">Register</button></a>
     </div>
      <div class="t_foremployers_container">
