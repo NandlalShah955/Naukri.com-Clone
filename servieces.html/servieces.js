@@ -78,3 +78,6 @@
     function res16(){
         location.href="https://resume.naukri.com/frequently-asked-questions-faq/category/general/privacyconfidentiality/"
     }
+    function vinay(){
+        location.href="https://www.naukri.com/mnjuser/homepage"
+    }

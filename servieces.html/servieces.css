@@ -222,3 +222,8 @@ color: white;
 .long{
     width: 60%;
 }
+#navbar{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 20px;
+}
