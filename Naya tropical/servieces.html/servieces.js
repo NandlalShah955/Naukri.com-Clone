@@ -83,7 +83,7 @@
     })
 
     const mainpagepai=()=>{
-        window.location.href="/Naya tropical/Landing Page by Nandlal/index.html"
+        window.location.href="/index.html"
     }
     let datafromLs=JSON.parse(localStorage.getItem("users"))||[]
 console.log(datafromLs)

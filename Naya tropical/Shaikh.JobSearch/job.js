@@ -9,7 +9,7 @@ let arr= [
 ]
 
 document.getElementById("redierect_kr").addEventListener("click",()=>{
-    window.location.href="/Naya tropical/Landing Page by Nandlal/index.html"
+    window.location.href="/index.html"
   })
 console.log("Hi")
 let datafromLs=JSON.parse(localStorage.getItem("users"))||[]

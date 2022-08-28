@@ -20,7 +20,8 @@ class user {
         }
       }
       if (data == true) {
-        window.location.href = "/Naya tropical/Shaikh.JobSearch/job.html";
+  
+    window.location.href = "/Naya tropical/Shaikh.JobSearch/job.html";
       } else {
           alert("Wrong Credentials");
           window.location.reload();
@@ -38,3 +39,4 @@ class user {
 document.querySelector(".t_login_submit_btn").addEventListener("click", function () {
     loginUser();
   })
+  
