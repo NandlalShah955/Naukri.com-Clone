@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #reg_navbar{
+          display: flex;
+          justify-content: space-between;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #reg_navbar>img{
+        height: 100%;
+        margin: 10px 20px;
+        }
+        #reg_navbar>p{
+        margin: 10px 20px;         
+        }
+        .r_container{
+            /* border: 1px solid red; */
+            width: 98%;
+            height: 200vh;
+            margin: auto;
+            display: flex;
+            margin-top: 30px
+        }
+        .r_left{
+         /* border: 1px solid magenta; */
+         width: 25%;
+         height: 55vh;
+         margin-top: 10px;
+         /* position: fixed; */
+         float: left;
+        }
+        .r_right{
+         /* border: 1px solid teal; */
+         width: 75%;
+         float: right;
+        }
+        .r_right_top{
+            border: 1px solid transparent;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 95%;
+            margin: auto;
+            height: 155vh;
+            margin-bottom: 15px;
+        }
+        .r_right_bottom{
+            /* border: 1px solid rgb(109, 15, 250); */
+            width: 90%;
+            margin-top: 40px;
+            height: 16vh;
+        }
+        .r_left_div img:nth-child(1){
+         height: 3vh;
+         margin-top: 20px;
+        }
+        .r_left_div img:nth-child(3){
+         height: 3vh;
+        }
+        .r_left_div img:nth-child(5){
+         height: 3vh;
+        }
+        .r_left_div div:nth-child(1){
+         display: flex;
+         justify-content: center;
+         margin-bottom: -20px;
+        }
+        .r_left_div div:nth-child(2){
+         display: flex;
+         justify-content: center;
+         margin-left:13px ;
+         margin-bottom: -20px;
+        }
+        .r_left_div div:nth-child(3){
+         display: flex;
+         justify-content: center;
+        }
+        .r_left h3{
+            text-align: center;
+            margin-bottom: -5px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .r_left_div{
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 50vh;
+            margin-top: -90px;
+        }
+        .r_right_top h1{
+        font-family: sans-serif;
+        margin: 50px 0 30px 50px;
+        font-size: 32px;
+        line-height: 28px;
+        }
+        .t_reg_form{
+            margin-left: 50px;
+        }
+        .t_reg_form label{
+            font-weight: 600;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .t_reg_form input{
+            width: 50vw;
+            height: 7vh;
+        }
+        .t_reg_form ::placeholder{
+            font-size: large;
+            padding: 5px;
+            color: gray;
+        }
+        .t_resume-btn{
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 10vw;
+            font-weight: 600;
+            color: white;
+            border-radius:20px;
+            background-color: #FF7555;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .t_resume-btn1{
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 12vw;
+            font-size: large;
+            font-weight: 700;
+            color: white;
+            border-radius:20px;
+            background-color: #457EFF;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .r_right_bottom div{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        }
+        .r_right_bottom div a{
+        color: #457EFF;
+        font-size: small;
+        text-decoration: none;
+        }
+
+</style>
+</head>
+<body>
+    <!-- THIS IS THE DIV BELONGS TO NAVBAR OF THE REGISTER PAGE -->
+   <div id="reg_navbar">
+    <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error">
+    <p style="color: grey;">Already Registered?<a href="#" style="text-decoration: none; color: blue;"> Login</a> here</p>
+   </div>
+
+   <!-- THIS THE CONTAINER WHICH CONTAINS THE REMAINING ELEMENTS OF THE REGISTER PAGE -->
+
+   <div class="r_container">
+     <div class="r_left" >
+        <img src="https://static.naukimg.com/s/7/104/assets/images/green-boy.c8b59289.svg" alt="Error" style="margin-left:100px; margin-top: 50px;">
+        <h3>On registering, you can</h4>
+        <div class="r_left_div">
+            <div>
+                <img src="https://givingmultiplier.org/assets/steps/check_green-b697563c885622ccd32a7c4dfef8e8eeaa3e32835b487808dc4689723cdb4c99.png" alt="Error"style="margin-top:100px;">
+                <p style="width: 13vw;margin-left:8px;color: grey;margin-top: 100px;">Build your profile and let recruiters find you</p>
+            </div>
+            <div>
+                <img src="https://givingmultiplier.org/assets/steps/check_green-b697563c885622ccd32a7c4dfef8e8eeaa3e32835b487808dc4689723cdb4c99.png" alt="Error">
+            <p style="width: 14vw;margin-left:8px;color: grey;">Get job postings delivered right to your email</p>
+            </div>
+            <div>
+                <img src="https://givingmultiplier.org/assets/steps/check_green-b697563c885622ccd32a7c4dfef8e8eeaa3e32835b487808dc4689723cdb4c99.png" alt="Error">
+                <p style="width: 13vw;margin-left:8px;color: grey;">Find a job and grow your career</p>
+            </div>
+        </div>
+     </div>
+
+     <div class="r_right">
+        <div class="r_right_top">
+            <h1>Find a job & grow your career</h1>
+            <br>
+            <form class="t_reg_form">
+                <label for="Name">Full Name</label><br>
+                <input type="text" placeholder="What is your name?" id="t_fullname"><br><br>
+                <label for="Email">Email Id</label><br>
+                <input type="text" placeholder="Tell us your Email ID"><br>
+                <small>We'll send you relevant jobs in your mail</small><br><br>
+                <label for="Password">Password</label><br>
+                <input type="text" placeholder="Create a password for your account"><br>
+                <small>Minimum 6 characters required</small><br><br>
+                <label for="phone">Mobile Number</label><br>
+                <input type="number" value="+91" placeholder="Mobile Number"><br>
+                <small>Recruiters will call you on this number</small><br><br>
+                <label for="work status">Work Status</label><br>
+                <h3 style="color:#457EFF"><input type="checkbox" style="width:2vw;height:3vh;"></input> I'm Experienced &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" style="width:2vw;height:3vh;"></input> I'm a Fresher</h3>
+                <br>
+                <label for="resume">Resume</label><br>
+                <button class="t_resume-btn">Upload Resume</button><br>
+                <small>Recruiters give first preference to candidates who have a resume</small>
+                <br><br>
+                <p><input type="checkbox" style="width:2vw;height:3vh;"></input>Send me important updates on <img src="https://static.naukimg.com/s/7/104/assets/images/whatsappicon.0011d8c1.png"alt="Error" style="height: 4vh;">Whatsapp</p>
+                <br>
+                <small>By clicking Register, you agree to the <a href="https://www.naukri.com/termsconditions#g1" target="_blank" style="text-decoration: none;color: blue;">Terms and Conditions</a> & <a href="https://www.naukri.com/privacypolicy" target="_blank" style="text-decoration: none;color: blue;">Privacy Policy</a> of Naukri.com</small>
+                <br>
+                <button class="t_resume-btn1" >Register Now</button>
+            </form>
+        </div>
+        <div class="r_right_bottom">
+            <div>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Report a Problem</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+         <small style="color: gray;margin-left: 285px;">All rights reserved © 2022 Info Edge India Ltd.</small>
+        </div>
+     </div>
+   </div>
+ 
+</body>
+</html>
+<script>
+document.getElementById("reg_navbar").addEventListener("click",function(){
+        mainpagepai();
+    })
+
+    const mainpagepai=()=>{
+        window.location.href="/Landing Page by Nandlal/index.html"
+    }
+</script>

@@ -1,0 +1,238 @@
+#navbardata{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+   
+}
+
+body{
+
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+  
+    
+}
+#second{
+    display: flex;
+   margin-right: 20%;
+
+   gap: 50px;
+
+   font: 30px;
+   margin: auto;
+
+    
+  
+}
+
+a{
+  text-decoration: none;  
+  color: grey;
+}
+a:hover{
+    color: blue;
+}
+
+
+
+   
+    
+a.active{
+    color: blue;
+}
+#submenu1{
+ display: none;
+ 
+
+}
+
+a:hover #submenu1{
+    display: block;
+    position: absolute;
+    color:black;
+    display: flex;
+   padding: 0px 20px;
+    line-height: 30px;
+    text-decoration: none;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color:white;
+}
+
+
+
+
+   
+
+
+   /*  left div decoration */
+   #leftside{
+    width: 100%;
+    overflow-y:hidden;
+      display: flex;
+   
+    height: auto;
+    margin-top: 90px;
+   
+    margin-left: 20px;
+    font-size: 20px;
+    gap: 10px;
+  
+     
+   }
+   #lest{
+    width: 20%;
+  
+   }
+
+   #logo{
+    width: 10%;
+    height: 20px;
+
+   }
+
+
+   /*middle div */
+
+   #middle{
+   
+    width:60%;
+     height: auto;
+    margin-left: 10px;
+
+ 
+    
+
+   }
+   #middle>div{
+    padding-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+ 
+    height: auto;
+    
+
+
+   }
+   #middle>div>button{
+    position: relative;
+    top: -10px;
+    left: 70%;
+    background-color: blue;
+    font-size: 20px;color: white;
+    border-radius: 10px;
+    padding: 10px ;
+    border: none;
+   }
+
+ 
+#right{
+   
+   
+    width: 20%;
+    
+   }
+
+   #right>div{
+    display: flex;
+   }
+   #right>div>img{
+    width: 20%;
+    height: 70px;
+    margin-right: 10px;
+   }
+   #right>a>button{
+    display: block;
+    width: 90%;
+    color: white;
+    font-size: 15px;
+    background-color: darkorange;
+    margin: auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 0px;
+   }
+   #right>a>button:hover{
+    cursor: pointer;
+   }
+
+    #sideImage{
+    width: 100%;
+    margin-top: 20px;
+   }
+
+
+   #fotter{
+    width: 100%;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.812);
+    margin-top: 20px;
+    display: flex;
+  
+    color: white;
+
+   gap:120px ;
+    overflow-y:hidden;
+    
+    justify-content: center;
+
+   }
+   #fotter p{
+    color: rgb(238, 237, 232);
+
+   }
+   #fotter p:hover{
+    cursor: pointer;
+    color: white;
+   font-size: 20px;
+    
+
+   }
+   #playLOgo{
+    width: 80%;
+    height: 50px;
+  
+   }
+
+   #department:hover{
+    cursor: pointer;
+    
+   }
+    
+
+   
+
+   #locationDta:hover{
+    cursor: pointer;
+    
+   }
+
+
+   #salaey:hover{
+    cursor: pointer;
+    
+   }
+
+
+   
+   #decreaseOrder:hover{
+    cursor: pointer;
+    
+   }
+
+   
+
+   
+
+   
+   

@@ -1,0 +1,102 @@
+<!-- Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@shaikh9560 
+shreyarani73
+/
+Job-Portal-App
+Public
+Code
+Issues
+Pull requests
+3
+Actions
+Projects
+Security
+Insights
+Job-Portal-App/naukri/templates/naukri/index.html
+@shreyarani73
+shreyarani73 css changes
+Latest commit 921659b on Sep 18, 2019
+ History
+ 1 contributor
+59 lines (50 sloc)  1.97 KB
+
+{% extends 'naukri/base.html' %}
+
+
+{% load static %}
+
+
+{% block content %}
+
+
+{% block navigation %} -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<a class="navbar-brand" href="{% url 'naukri:index' %}">
+    	<img src="{% static 'naukri/images/icon.png' %}" width="30" height="30" alt="Logo">
+    </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{% url 'naukri:index' %}">Home</a></li>
+      <li class="active"><a href="#">Profile</a></li>
+      {% if user.is_authenticated %}
+      <li><a href="{% url 'naukri:mylogout' %}"><button>Logout</button></a></li>
+      {% else %}
+      <li><a href="{% url 'naukri:mylogin' %}"><button>Login</button></a></li>
+      <li><a href="{% url 'social:begin' 'facebook' %}"><button>Login with <i class="fa fa-facebook-official"></i></button></a></li>
+      <li><a href="{% url 'social:begin' 'google-oauth2' %}"><button>Login with <i class="fa fa-google"></i></button></a></li>
+      <!-- {% endif %} -->
+    </ul>
+  </div>
+</nav>
+<!-- {% endblock %} -->
+  
+	<!-- {% if user.is_authenticated %}
+	         <a href="{% url 'naukri:mylogout' %}"><button>logout</button></a>
+	    {% else %}
+	        <a href="{% url 'naukri:mylogin' %}"><button>login</button></a>
+	       
+	    {% endif %} -->
+
+<div class="card-container">
+	<!-- {% if alljob %}
+		{% for each in alljob %} -->
+		<div class="card">
+			<div class="card__title">
+				<a href="{% url 'naukri:jobdetail' each.id %}"><h2>{{each.designation}}</h2></a>
+				<h3>{{ each.company }}</h3>
+			</div>
+			<div class="card__description">
+				<p>Job Type: {{each.jobtype}}<br>Salary: {{each.salary}}/-
+				<a href="{% url 'naukri:jobdetail' each.id %}"><button>View Details</button></a></p>
+			</div>
+		</div>
+		<!-- {% endfor %}
+	{% endif %} -->
+</div>
+<a href="{% url 'naukri:newcomp' %}" class="button"><button type="button">Register Company Here</button></a>
+<a href="{% url 'naukri:addjob' %}" class="button"><button type="button">Add jobs Here</button></a>
+</div>
+<!-- {% endblock %}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications -->
