@@ -35,8 +35,10 @@
          width: 25%;
          height: 55vh;
          margin-top: 10px;
-         /* position: fixed; */
-         float: left;
+         position: sticky;
+         left: 0;
+         top: 60px;
+         /* float: left; */
         }
         .r_right{
          /* border: 1px solid teal; */
@@ -111,11 +113,14 @@
         .t_reg_form input{
             width: 50vw;
             height: 7vh;
+            border: 1px solid #d3e1ea;
+            outline: none;
+            /* border-color: gray; */
         }
         .t_reg_form ::placeholder{
             font-size: large;
             padding: 5px;
-            color: gray;
+            color: #7c858b;
         }
         .t_resume-btn{
             margin: 10px 0 10px 0;
@@ -157,7 +162,7 @@
     <!-- THIS IS THE DIV BELONGS TO NAVBAR OF THE REGISTER PAGE -->
    <div id="reg_navbar">
     <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error">
-    <p style="color: grey;">Already Registered?<a href="#" style="text-decoration: none; color: blue;"> Login</a> here</p>
+    <p style="color: grey;">Already Registered?<a href="./t_login.html" style="text-decoration: none; color: blue;"> Login</a> here</p>
    </div>
 
    <!-- THIS THE CONTAINER WHICH CONTAINS THE REMAINING ELEMENTS OF THE REGISTER PAGE -->
@@ -190,13 +195,13 @@
                 <label for="Name">Full Name</label><br>
                 <input type="text" placeholder="What is your name?" id="t_fullname"><br><br>
                 <label for="Email">Email Id</label><br>
-                <input type="text" placeholder="Tell us your Email ID"><br>
+                <input type="email" placeholder="Tell us your Email ID" id="u_emailID"><br>
                 <small>We'll send you relevant jobs in your mail</small><br><br>
                 <label for="Password">Password</label><br>
-                <input type="text" placeholder="Create a password for your account"><br>
+                <input type="password" placeholder="Create a password for your account" id="u_Password"><br>
                 <small>Minimum 6 characters required</small><br><br>
                 <label for="phone">Mobile Number</label><br>
-                <input type="number" value="+91" placeholder="Mobile Number"><br>
+                <input type="number" value="" placeholder="Mobile Number"><br>
                 <small>Recruiters will call you on this number</small><br><br>
                 <label for="work status">Work Status</label><br>
                 <h3 style="color:#457EFF"><input type="checkbox" style="width:2vw;height:3vh;"></input> I'm Experienced &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" style="width:2vw;height:3vh;"></input> I'm a Fresher</h3>
@@ -209,17 +214,18 @@
                 <br>
                 <small>By clicking Register, you agree to the <a href="https://www.naukri.com/termsconditions#g1" target="_blank" style="text-decoration: none;color: blue;">Terms and Conditions</a> & <a href="https://www.naukri.com/privacypolicy" target="_blank" style="text-decoration: none;color: blue;">Privacy Policy</a> of Naukri.com</small>
                 <br>
-                <button class="t_resume-btn1" >Register Now</button>
+                <button class="t_resume-btn1" onclick="signupUser()" >Register Now</button>
+                <!-- <input type="submit" value = "Register Now" id="t_resume-btn1" onclick="signupUser()" /> -->
             </form>
         </div>
         <div class="r_right_bottom">
             <div>
                 <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQs</a>
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Report a Problem</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Contact Us</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">FAQs</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Terms and Conditions</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Report a Problem</a>
+                <a href="#" style="border-left: 1px solid grey;padding-left: 15px;">Privacy Policy</a>
             </div>
          <small style="color: gray;margin-left: 285px;">All rights reserved © 2022 Info Edge India Ltd.</small>
         </div>
@@ -228,12 +234,13 @@
  
 </body>
 </html>
+<script src="./t_register.js"></script>
 <script>
-document.getElementById("reg_navbar").addEventListener("click",function(){
-        mainpagepai();
-    })
-
-    const mainpagepai=()=>{
-        window.location.href="/Landing Page by Nandlal/index.html"
-    }
-</script>
+    document.getElementById("reg_navbar").addEventListener("click",function(){
+            mainpagepai();
+        })
+    
+        const mainpagepai=()=>{
+            window.location.href="/Landing Page by Nandlal/index.html"
+        }
+    </script>

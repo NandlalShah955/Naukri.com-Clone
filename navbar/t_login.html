@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./t_navbar.css">
+    <style>
+.t_login_container{
+    border:1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    width:30vw;
+    /* margin: auto; */
+    padding: 50px;
+}
+.t_login_div1 div:nth-child(1){
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 25px;
+}
+.t_login-form input{
+    width: 95%;
+    height: 7vh;
+}
+.t_login-form ::placeholder{
+    padding: 10px;
+    font-size: larger;
+}
+.t_login_submit_btn{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 95%;
+    font-weight: 600;
+    color: white;
+    background-color: #457EFF;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.t_login_btnn img{
+    width: 5%;
+    padding:9px;
+    margin: 6px 0 0 5px;
+    /* height: 5vh; */
+}
+.t_login_btnn{
+    width: 95%;
+    height: 8vh;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.t_login_left_container{
+    border: 1px solid transparent;
+    height: 100%;
+    width: 40%;
+    left: auto;
+    right: auto;
+    position: relative;
+    margin: 60px 0 0 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.t_login_box{
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+}
+.t_reg_for_free_btn{
+    width: 20vw;
+    padding: 12px;
+    color: #457EFF;
+    font-weight: 600;
+    border: 1px solid #457EFF;
+    background: white;
+    cursor: pointer;
+}
+.t_cont_div{
+    display: flex;
+}
+.t_cont_div p{
+    margin:0 -10px 20px 20px ;
+}
+.t_login_left_container img:nth-child(1){
+   height: 3vh;
+}
+.t_login_left_container1{
+    margin: 50px 0 0 70px;
+}
+#login_navbar{
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 10vh;
+}
+    </style>
+</head>
+<body>
+    <div id="login_navbar"></div>
+    <div class = "t_login_box">  
+        <div class="t_login_left_container">
+            <div class="t_login_left_container1">
+                <h3 style="font-family: Arial, Helvetica, sans-serif;">New to Naukri?</h3>
+                <div class="t_cont_div">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828649.png" alt="Error">
+                    <p>One click apply using naukri profile.</p>
+                </div>
+                <div class="t_cont_div">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828649.png" alt="Error">
+                    <p>Get relevant job recommendations.</p>
+                </div>
+                <div class="t_cont_div">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828649.png" alt="Error">
+                    <p>Showcase profile to top companies and consultants.</p>
+                </div>
+                <div class="t_cont_div">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828649.png" alt="Error">
+                    <p>Know application status on applied jobs.</p>
+                </div>
+                <br>
+            <a href="./t_register.html" target="_blank"><button class="t_reg_for_free_btn">Register for Free</button></a>
+            </div>
+            <br><br>
+            <img src="https://static.naukimg.com/s/5/105/i/register.png" alt="Error" style="width: 40%;margin:2% 60%;">
+        </div>
+    
+        <div class="t_login_container">
+            <div class="t_login_div1">
+                <div>
+                    <h2 style="font-family: Arial, Helvetica, sans-serif;">Login</h2>
+                    <a href="./t_register.html" style="text-decoration: none;font-family: Arial, Helvetica, sans-serif;color: #457EFF;"><h4>Register for free</h4></a>
+                </div>
+                <form class="t_login-form">
+                    <label for="Email">Email ID / Username</label><br>
+                    <input type="text"placeholder="Enter your active Email ID / Username" id="t_e_mail">
+                    <br><br><br><br>
+                    <label for="Password">Password</label><br>
+                    <input type="Password" placeholder="Enter your password" id="t_pass_word">
+                    <br>
+                    <a href="#" style="text-decoration: none;text-align: right;color: #457EFF;"><p>Forgot Password?</p></a><br>
+                    <button class="t_login_submit_btn">Login</button>
+                    <br>
+                    <a href="./t_otp.html" style="text-decoration: none;color: #457EFF;text-align: center;" target="_blank"><h3>Use OTP to Login</h3></a>
+                </form>
+          <hr><br><br>
+          <button class="t_login_btnn"><div class="t_div-inside"><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Error"><h5 style="margin:auto;font-size:larger;color: gray;">Sign in with Google</h5></div></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="./t_login.js" type="module"></script>
