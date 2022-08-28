@@ -1,5 +1,5 @@
 let navbar_t = () => { 
-    return `  <div class="t_logo"><a href="#"><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error" id="mainpagepaileja"></a></div>
+    return `  <div class="t_logo"><a href=""><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Error" id="mainpagepaileja"></a></div>
     <div class="t_elements">
         <ul class="t_elements_container">
             <li class="t_elements_li">
@@ -130,7 +130,7 @@ let navbar_t = () => {
         </ul>
     </div>
     <div class="t_button">
-        <a href="../navbar/t_login.html" target="_blank"><button class="t_button_1">Login</button></a>
+        <a href="#" target="_blank"><button class="t_button_1">Login</button></a>
         <a href="../navbar/t_register.html" target="_blank"><button class="t_button_2">Register</button></a>
     </div>
      <div class="t_foremployers_container">
