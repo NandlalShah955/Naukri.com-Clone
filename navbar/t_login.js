@@ -20,7 +20,7 @@ class user {
         }
       }
       if (data == true) {
-        window.location.href = "/Shaikh.JobSearch/job.html";
+        window.location.href = "/Naya tropical/Shaikh.JobSearch/job.html";
       } else {
           alert("Wrong Credentials");
           window.location.reload();

@@ -83,5 +83,23 @@
     })
 
     const mainpagepai=()=>{
-        window.location.href="/Landing Page by Nandlal/index.html"
+        window.location.href="/Naya tropical/Landing Page by Nandlal/index.html"
     }
+    let datafromLs=JSON.parse(localStorage.getItem("users"))||[]
+console.log(datafromLs)
+
+function data() {
+    let container=document.getElementById("loginwala")
+    container.innerHTML=null;
+    datafromLs.forEach((elem) => {
+        let name=document.createElement("p")
+        name.innerText=elem.email;
+        name.style.color="Navy"
+        name.style.fontWeight="800";
+
+        container.append(name)
+        
+    });
+
+}
+data()
