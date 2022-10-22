@@ -40,15 +40,15 @@ Manager : Sudhanshu Sharma
 > Github: [Nandlal955](https://github.com/NandlalShah955) 
 
 #### Tanuj Pant
-> Github: [Nandlal955](https://github.com/IInnffiinniittyy) 
+> Github: [Tanuj Pant](https://github.com/IInnffiinniittyy) 
 
 #### Kailash chandra
-> Github: [Nandlal955](https://github.com/Gurjazz18) 
+> Github: [Kailash chandra](https://github.com/Gurjazz18) 
 
 #### Musavvir Shaikh
-> Github: [Nandlal955](https://github.com/shaikh9560) 
+> Github: [Musavvir Shaikh](https://github.com/shaikh9560) 
 
 #### Vinay Jayraj Barve
-> Github: [Nandlal955](https://github.com/vinaybarve) 
+> Github: [Vinay Jayraj Barve](https://github.com/vinaybarve) 
 
 
