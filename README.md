@@ -1,4 +1,5 @@
 # Naukri.com
+![image](https://user-images.githubusercontent.com/96822665/208378507-bc11b533-a1f1-46ba-9e0b-d436752ab9af.png)
 
 > [Naukri](https://www.naukri.com/) Naukri.com was launched in March 1997. The company was started as a floorless employment exchange. It was a database of resume, jobs, and recruitment consultants. Conceived as a platform of job seekers and hiring managers to meet, the services went commercial in October 1997.
 
